@@ -1,0 +1,12 @@
+[Unit]
+Description=PostgreSQL Status Checker
+
+[Service]
+Type=simple
+ExecStart=/opt/pghealth
+Restart=on-failure
+User=postgres
+Group=postgres
+
+[Install]
+WantedBy=multi-user.target
